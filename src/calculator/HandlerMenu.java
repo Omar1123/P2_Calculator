@@ -29,6 +29,12 @@ public class HandlerMenu {
         calculator.setNumberTwo(scan.nextDouble());
     } 
     
+    public void userInputOneResult() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese el primer numero");
+        calculator.setNumberOne(scan.nextDouble());        
+    } 
+    
     public void menu() {
         
         Scanner scan = new Scanner(System.in);
@@ -39,7 +45,17 @@ public class HandlerMenu {
         System.out.println("1) Suma");
         System.out.println("2) Resta");
         System.out.println("3) Multiplicacion");
-        System.out.println("4) Division");              
+        System.out.println("4) Division");
+        System.out.println("5) Raiz cuadrada");
+        System.out.println("6) Raiz cubica");
+        System.out.println("7) Cos");
+        System.out.println("8) Cos hiperbolico");
+        System.out.println("9) Exponente");
+        System.out.println("10) Log base 10");
+        System.out.println("11) Maximo entre dos numeros");
+        System.out.println("12) Minimo entre dos numeros");
+        System.out.println("13) Sen");
+        System.out.println("14) Sen hiperbolico");
         decition = scan.nextInt();
         
         if(decition > 4) {
@@ -67,6 +83,66 @@ public class HandlerMenu {
         if(decition == 4) {
             userInput();
             result = calculator.division();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 5) {
+            userInputOneResult();
+            result = calculator.squareRoot();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 6) {
+            userInputOneResult();
+            result = calculator.cubeRoot();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 7) {
+            userInputOneResult();
+            result = calculator.cos();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 8) {
+            userInputOneResult();
+            result = calculator.hyperbolicCos();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 9) {
+            userInputOneResult();
+            result = calculator.exp();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 10) {
+            userInputOneResult();
+            result = calculator.log10();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 11) {
+            userInputOneResult();
+            result = calculator.max();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 12) {
+            userInputOneResult();
+            result = calculator.min();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 13) {
+            userInputOneResult();
+            result = calculator.sin();
+            System.out.println("El resultado es: " + result);
+        }
+        
+        if(decition == 14) {
+            userInputOneResult();
+            result = calculator.sinh();
             System.out.println("El resultado es: " + result);
         }
     }    
