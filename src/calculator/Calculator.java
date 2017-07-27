@@ -60,6 +60,66 @@ public class Calculator {
         return result;
     }
     
+    public double squareRoot() {
+        result = 0;
+        result = Math.sqrt(numberOne);
+        return result;
+    }
+    
+    public double cubeRoot() {
+        result = 0;
+        result = Math.cbrt(numberOne);
+        return result;
+    }
+    
+    public double cos() {
+        result = 0;
+        result = Math.cos(numberOne);
+        return result;
+    }     
+
+    public double hyperbolicCos() {
+        result = 0;
+        result = Math.cosh(numberOne);
+        return result;
+    }    
+    
+    public double exp() {
+        result = 0;
+        result = Math.exp(numberOne);
+        return result;
+    }
+    
+    public double log10() {
+        result = 0;
+        result = Math.log10(numberOne);
+        return result;
+    }       
+    
+    public double max() {
+        result = 0;
+        result = Math.max(numberOne,numberTwo);
+        return result;
+    }       
+    
+    public double min() {
+        result = 0;
+        result = Math.min(numberOne,numberTwo);
+        return result;
+    }
+    
+    public double sin() {
+        result = 0;
+        result = Math.sin(numberOne);
+        return result;
+    }    
+    
+    public double sinh() {
+        result = 0;
+        result = Math.sinh(numberOne);
+        return result;
+    }          
+    
     public Calculator() {
         numberOne = 0;
         numberTwo = 0;
