@@ -42,6 +42,10 @@ public class HandlerMenu {
         System.out.println("4) Division");              
         decition = scan.nextInt();
         
+        if(decition > 4) {
+            System.out.println("Resultado no valido");
+        }
+        
         if(decition == 1) {
             userInput();
             result = calculator.sum();

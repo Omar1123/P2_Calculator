@@ -53,6 +53,9 @@ public class Calculator {
         result = 0;
         if(numberOne != 0) {
             result = numberOne / numberTwo;   
+        } else {
+            System.out.println("Caso no valido");
+            result = 0;
         }               
         return result;
     }
