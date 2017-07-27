@@ -58,7 +58,7 @@ public class HandlerMenu {
         System.out.println("14) Sen hiperbolico");
         decition = scan.nextInt();
         
-        if(decition > 4) {
+        if(decition > 14) {
             System.out.println("Resultado no valido");
         }
         
